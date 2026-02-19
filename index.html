@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">      
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="site-nav__brand">
+            <a class="site-nav__brand-link" href="index.html">ABBEDJA LEAR <br>TUVALLES</a>
+        </div>
+        <div class="site-nav__links">
+            <a href="#" class="site-nav__link is-active" aria-current="true">About Me</a>
+            <a href="contact-me.html" class="site-nav__link">Contact Me</a>
+            <a href="#" class="site-nav__link">Download CV</a>
+        </div>
+    </nav>
+
+    <!-- Section Navigation Indicator -->
+    <div class="section-nav">
+        <div class="section-nav-item active" data-section="0">00</div>
+        <div class="section-nav-item" data-section="1">01</div>
+        <div class="section-nav-item" data-section="2">02</div>
+        <div class="section-nav-item" data-section="3">03</div>
+        <div class="section-nav-item" data-section="4">04</div>
+    </div>
+
+<main>
+    <section class="hero" data-section="0">
+        <div class="hero-bg">
+            <div class="jumbo"></div>
+        </div>
+        <div class="myName">
+            <h3>ABBEDJA LEAR</h3>
+            <h1>TUVALLES</h1>
+        </div>
+    </section>
+
+    <section class="intro-section" data-section="1">
+        <div class="intro">
+            <img src="images/profile.jpg" alt="Profile" class="profile-image">
+            <div class="intro-left">
+                <h4 class="welcome">Hello, I am Abbedja</h4>                
+                <h2>I design clarity from <br>complexity</h2>
+                <h6 class="welcome-desc">Full-stack Developer | Solutions Architect | AI Integration Enthusiast</h6>
+            </div>
+            <div class="intro-right">
+                <p class="long-desc"> <span style="font-weight: bold; margin-bottom: 1rem;">Professionally connected to building systems that turn complexity into clarity.</span>  <br><br>
+                    I'm a Computer Science student with experience across full-stack development, IT operations, and automation. I enjoy designing scalable solutions, integrating APIs, and building tools that eliminate inefficiency. I'm driven by problem-solving, collaboration, and learning how systems behave at scale.
+                    <br><br>Outside of work, I'm usually dancing, exploring creative projects, or experimenting with new technologies to push my skills further.
+                </p>
+                
+                <div class="socials">
+                    <ul class="socials-list-container">
+                        <a href="https://github.com/aalearz?tab=repositories" target="_blank" rel="noopener noreferrer"><li class="socials-list"><i class="bi bi-github"></i></li></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer"><li class="socials-list"><i class="bi bi-envelope"></i></li></a>
+                        <a href="https://www.instagram.com/aa_lear/" target="_blank" rel="noopener noreferrer"><li class="socials-list"><i class="bi bi-instagram"></i></li></a>
+                        <a href="https://www.facebook.com/bbdjtvlls" target="_blank" rel="noopener noreferrer"><li class="socials-list"><i class="bi bi-facebook"></i></li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" data-section="2">
+        <div class="heading">
+            <h2 class="section-title">Experience</h2>
+            <p>I have worked across technical, operational, and creative roles, which trained me to <br>adapt quickly and design solutions that work across systems—not just codebases.</p>
+        </div>
+
+        <div class="experience-list">
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <div class="experience-card-title-section">
+                        <h3 class="experience-card-company">Shopee Philippines</h3>
+                        <h4 class="experience-card-position">Junior Helpdesk Analyst (Intern)</h4>
+                        <p class="experience-card-meta">SEP 2025 – FEB 2026 - Mandaluyong City, Philippines</p>
+                    </div>
+                    <div class="experience-card-toggle">
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="experience-card-details">
+                    <div class="experience-card-section">
+                        <h5>Ticket Management & User Support</h5>
+                        <ul>
+                            <li>Managed weekly IT support tickets covering system access, account issues, and application errors, maintaining a 99.06% SLA compliance rate</li>
+                            <li>Provided user account management using Active Directory, including account creation, password resets, group assignments, and access revocation</li>
+                            <li>Delivered Microsoft Entra ID (Azure AD) and Microsoft 365 Admin Center support for account provisioning, license management, and authentication-related issues</li>
+                            <li>Resolved endpoint and access concerns using Workspace ONE, supporting device enrollment, policy enforcement, and compliance checks</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card-section">
+                        <h5>Application Development & Troubleshooting</h5>
+                        <ul>
+                            <li>Debugged logic and data issues in the IT Asset Center application (AppSheet), improving data integrity and overall user experience</li>
+                            <li>Conducted testing and validation of fixes to ensure zero regression issues post-deployment</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card-section">
+                        <h5>Data Engineering & API Integration</h5>
+                        <ul>
+                            <li>Enhanced internal data extraction tools by integrating assigned API calls from IT Center, automating reporting and performance monitoring</li>
+                            <li>Processed, validated, and analyzed extracted data to support business intelligence dashboards</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card-section">
+                        <h5>Automation & Integration Projects</h5>
+                        <ul>
+                            <li>Engineered a centralized announcement system using Google Apps Script, integrated with SeaTalk webhook APIs for automated company-wide communications</li>
+                            <li>Reduced manual announcement distribution time by 80% through webhook-triggered notifications across multiple channels</li>
+                            <li>Developed the Corporate IT Hub web application with role-based access control, providing centralized access to IT resources, tools, and applications for 500+ employees</li>
+                            <li>Built an Asset Issuance Management system featuring automated IT PIC assignments, bulk device allocations, and policy-compliant workflows using Google Apps Script and Google Sheets</li>
+                            <li>Created a Device Wipe Alert automation system that monitors offboarding tickets, identifies hardware compliance issues post-last-working-day, and triggers automated SeaTalk notifications with 3-working-day grace period logic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <div class="experience-card-title-section">
+                        <h3 class="experience-card-company">Lamina Studios, LLC</h3>
+                        <h4 class="experience-card-position">Full Stack Developer (Intern)</h4>
+                        <p class="experience-card-meta">JUL 2025 – AUG 2025 - Remote</p>
+                    </div>
+                    <div class="experience-card-toggle">
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="experience-card-details">
+                    <div class="experience-card-section">
+                        <h5>HR Management System Development</h5>
+                        <ul>
+                            <li>Architected and deployed a comprehensive HR management system using Laravel, Flask, and React with 4 core modules: recruitment, attendance, leave management, and predictive analytics</li>
+                            <li>Engineered REST APIs for CRUD operations and integrated Flask microservices for AI powered resume parsing and employee attrition prediction (900+ resumes processed)</li>
+                            <li>Implemented QR-based attendance system with time-sensitive tokens and role-based access control (User/Admin/Superadmin) using Laravel Sanctum authentication</li>
+                            <li>Built predictive analytics features using Scikit-learn for attrition forecasting and performance risk classification, connected via HTTP endpoints</li>
+                            <li>Designed normalized database schema with complex relationships and deployed platform responsive interface tested on mobile and desktop environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <div class="experience-card-title-section">
+                        <h3 class="experience-card-company">Teleperformance</h3>
+                        <h4 class="experience-card-position">Customer Service Representative</h4>
+                        <p class="experience-card-meta">JAN 2023 – APR 2025 - Alabang, Muntinlupa</p>
+                    </div>
+                    <div class="experience-card-toggle">
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="experience-card-details">
+                    <div class="experience-card-section">
+                        <h5>Customer Support & Operations</h5>
+                        <ul>
+                            <li>Achieved 90% first-contact resolution rate for international travel bookings, resolving inquiries in under 5 minutes (exceeding KPIs by 20%)</li>
+                            <li>Implemented end-to-end problem-solving framework that reduced escalations by 35% and improved customer satisfaction scores by 15 points</li>
+                            <li>Streamlined booking processes by identifying and documenting 12 common workflow inefficiencies</li>
+                            <li>Mentored and onboarded 10+ new hires, improving their ramp-up efficiency by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <div class="experience-card-title-section">
+                        <h3 class="experience-card-company">M.G. Scape Audio Events</h3>
+                        <h4 class="experience-card-position">Executive Assistant, IT and Creative Tech</h4>
+                        <p class="experience-card-meta">JAN 2022 – JAN 2023 - Biñan, Laguna</p>
+                    </div>
+                    <div class="experience-card-toggle">
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="experience-card-details">
+                    <div class="experience-card-section">
+                        <h5>Marketing & Event Management</h5>
+                        <ul>
+                            <li>Designed marketing materials for 30+ events, attracting 1,500+ attendees</li>
+                            <li>Managed and supervised the whole Tech Team with 20 headcounts</li>
+                            <li>Provided live AV/LED tech support for shows with zero technical failures</li>
+                            <li>Managed PHP 50K+ event budgets and client communications, achieving 100% satisfaction</li>
+                            <li>Administrative support and document management for all company operations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <div class="experience-card-title-section">
+                        <h3 class="experience-card-company">Freelancer</h3>
+                        <h4 class="experience-card-position">Virtual Assistant & Creative Designer</h4>
+                        <p class="experience-card-meta">JUL 2021 - JUL 2022</p>
+                    </div>
+                    <div class="experience-card-toggle">
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="experience-card-details">
+                    <div class="experience-card-section">
+                        <h5>Design & Content Management</h5>
+                        <ul>
+                            <li>Landscape design for Town & Country Southville's gate renovation, improving community aesthetics</li>
+                            <li>Edited and scheduled 15+ podcast episodes, growing audience reach by 40%</li>
+                            <li>Created promotional graphics for 10+ small businesses, boosting social media engagement by 25%</li>
+                            <li>Processed 50+ product listings/week for Amazon & Walmart Canada storefronts</li>
+                            <li>Resolved 95% of customer inquiries within 24 hours and coordinated back-end operations for high-traffic online storefronts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <div class="experience-card-title-section">
+                        <h3 class="experience-card-company">Town & Country Southville HOA</h3>
+                        <h4 class="experience-card-position">Encoder</h4>
+                        <p class="experience-card-meta">JAN 2021 - JUL 2021 - Biñan, Laguna</p>
+                    </div>
+                    <div class="experience-card-toggle">
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="experience-card-details">
+                    <div class="experience-card-section">
+                        <h5>Document & Operations Management</h5>
+                        <ul>
+                            <li>Managed 100+ documents with automated file and financial tracking using Excel (VLOOKUP, XLOOKUP), cutting report generation time by 50%</li>
+                            <li>Designed internal branding materials, reducing external design costs by 30%</li>
+                            <li>Troubleshot and installed technical assets for 20+ team members</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section" data-section="3">
+        <div class="heading">
+            <h2 class="section-title">Skills</h2>
+            <p>I design and engineer scalable systems while translating complexity into clean, <br>intuitive user experiences and visual interfaces.</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <h4>Core Web Technologies</h4>
+                <p>HTML5 • CSS3 • JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-terminal"></i>
+                </div>
+                <h4>Programming Languages</h4>
+                <p>Python • PHP • SQL</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-layers"></i>
+                </div>
+                <h4>Frameworks & Backend</h4>
+                <p>React • Laravel • Flask • Node.js</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-gear"></i>
+                </div>
+                <h4>Systems & Automation</h4>
+                <p>Google Apps Script • AppSheet • REST APIs • Workflow Automation</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <h4>Cloud & Identity</h4>
+                <p>Azure AD • Microsoft 365 • Workspace ONE</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-tools"></i>
+                </div>
+                <h4>Tools</h4>
+                <p>Git • MySQL • Docker</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-palette"></i>
+                </div>
+                <h4>UI/UX & Design</h4>
+                <p>Figma • Adobe Creative Cloud</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-camera-video"></i>
+                </div>
+                <h4>Media Production</h4>
+                <p>Photoshop • Premiere Pro</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="bi bi-box"></i>
+                </div>
+                <h4>3D & Visualization</h4>
+                <p>SketchUp</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" data-section="4">
+        <div class="carousel-container">
+            <!-- Intro Slide -->
+            <div class="carousel-slide intro-slide">
+                <div class="intro-content">
+                    <h1 class="project-heading">Portfolio & Previous <br>Projects</h1>
+                    <p class="project-subheading">A portion of these projects were built during my internship, applying technical solutions to real operational challenges. Others were self-initiated to experiment, improve, and push my architectural thinking further. Every project represents a step forward in how I design and build systems.</p>
+                    <div class="glowing-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="carousel-slide project-slide">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/announcement-center.png" alt="Announcement Center">
+                    </div>
+                    <div class="project-description">
+                        <h3>Announcement Center</h3>
+                        <p>The Announcement Center is a web-based application that streamlines internal communications by sending formatted announcements, images, and interactive cards to multiple recipient groups via SeaTalk webhook integration. Built with Google Apps Script as the backend API, it features a modern, theme-switchable interface with real-time validation and dynamic content management.</p>
+                        <p><strong>Problem it solves:</strong> I developed this during my Shopee internship after observing the manual announcement workflow. Previously, the team had to:</p>
+                        <ul class="technical-implementation-bullet">
+                            <li>Manually send announcements to test groups via Google Script</li>
+                            <li>Screenshot the message to show the Team Lead how it looked</li>
+                            <li>Wait for verbal/chat approval</li>
+                            <li>Manually re-enter and send the same announcement to target groups</li>
+                        </ul>
+                        <p><strong>My solution:</strong> The Announcement Center automates this entire approval hierarchy:</p>
+                        <ul class="technical-implementation-bullet">
+                            <li>User composes the announcement once and selects target groups</li>
+                            <li>System automatically sends to test groups first</li>
+                            <li>Automatically generates an approval request in SeaTalk, mentioning the Team Lead with an interactive approval button</li>
+                            <li>Once approved via the button, the system automatically sends to all selected target groups</li>
+                        </ul>
+                        <p><strong>Impact:</strong> Reduced announcement distribution time by 80% and eliminated manual re-entry, ensuring message consistency across test and production sends.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="carousel-slide project-slide">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/asset-issuance-management.png" alt="Asset Issuance Management System">
+                    </div>
+                    <div class="project-description">
+                        <h3>Asset Issuance Management System</h3>
+                        <p>The Asset Management System is a Google Apps Script web application that centralizes and automates employee onboarding, device migration, and asset assignment workflows. It features role-based access control, automated IT PIC assignments, and real-time tracking of device allocations across the organization.</p>
+                        <p><strong>Problem it solves:</strong> During my Internship, I identified inefficiencies in the asset management workflow. The team relied on multiple disconnected Google Sheets:</p>
+                        <ul class="technical-implementation-bullet">
+                            <li>HR's onboarding list (accessed via IMPORTRANGE)</li>
+                            <li>Asset issuance policies in a separate sheet</li>
+                            <li>Device inventory in another document</li>
+                        </ul>
+                        <p>This fragmented system required switching between multiple sheets, manual data synchronization, and repetitive lookups—making the process slow and error-prone.</p>
+                        <p><strong>My solution:</strong> I built a unified web application that integrates three Google Sheets into a single, centralized system:</p>
+                        <ul class="technical-implementation-bullet">
+                            <li>Live HR Integration: Real-time sync with HR's onboarding list</li>
+                            <li>Dynamic Policy Management: Editable asset issuance policies directly within the app (add, modify, delete) without touching the source sheets</li>
+                            <li>Device Inventory Control: Centralized device tracking with bulk allocation capabilities</li>
+                            <li>Automated Workflows: Auto-assigns IT PICs based on predefined rules and generates compliance reports</li>
+                        </ul>
+                        <p><strong>Technical Implementation:</strong> Google Apps Script backend connecting three separate Google Sheets data sources, role-based access control for different team permissions, real-time data validation and policy enforcement, bulk device assignment with automated compliance checks.</p>
+                        <p><strong>Impact:</strong> Eliminated the need to navigate multiple spreadsheets, reduced manual data entry, and provided a single source of truth for all asset management operations—improving efficiency and data accuracy across the IT team.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="carousel-slide project-slide">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/corp-it-hub.png" alt="Corporate IT Hub">
+                    </div>
+                    <div class="project-description">
+                        <h3>Corporate IT Hub</h3>
+                        <p>The Corporate IT Hub is a centralized web application that serves as a one-stop portal for all internal IT resources, tools, and applications. Built with role-based access control, it provides employees with organized, permission-based access to company systems and documentation.</p>
+                        <p><strong>Problem it solves:</strong> During my Shopee internship, I observed that as the company scaled, employees were managing dozens of bookmarked tools across different platforms leading to confusion, lost links, and decreased productivity. IT support tickets for "where do I find X tool?" were increasing, and new hires struggled to discover available resources.</p>
+                        <p><strong>My solution:</strong> I developed a centralized IT Hub that consolidates all company tools and resources into a single, organized interface:</p>
+                        <ul class="technical-implementation-bullet">
+                            <li>Unified Access Point: All IT tools, applications, and resources accessible from one dashboard</li>
+                            <li>Role-Based Navigation: Different user roles see only relevant tools for their department/function</li>
+                            <li>Self-Service Resources: Integrated documentation, guides, and troubleshooting links</li>
+                        </ul>
+                        <p><strong>Technical Implementation:</strong> Google Apps Script web application with custom HTML/CSS/JavaScript frontend, role-based access control integrated with company directory, dynamic content rendering based on user permissions, responsive design for desktop and mobile access.</p>
+                        <p><strong>Impact:</strong> Reduced bookmark clutter for employees, decreased "tool location" support tickets, and improved onboarding efficiency by providing new hires with immediate visibility into all available company resources.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="carousel-slide project-slide">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/dermAID.png" alt="CMABFMB AI System">
+                    </div>
+                    <div class="project-description">
+                        <h3>A CROSS-MODAL ATTENTION-BASED FUSION OF MOBILENETV3 AND BERT (CMABFMB) FOR DERMATITIS DETECTION AND CLASSIFICATION IN SMOOTH-COATED DOGS</h3>
+                        <p>Led a team of five for our thesis as Project Lead and Lead Developer in creating an AI-powered diagnostic system for detecting and classifying dermatitis in smooth-coated dogs. Designed and implemented the complete system architecture, integrating MobileNetV3 for image analysis with BERT+BiLSTM for clinical text processing through a novel cross-modal attention fusion mechanism.</p>
+                        <p><strong>Technical Leadership:</strong></p>
+                        <ul class="technical-implementation-bullet">
+                            <li>Architected the full multimodal AI pipeline from data preprocessing to deployment</li>
+                            <li>Developed the fusion model achieving 97.6% detection accuracy and 96.78% classification accuracy across seven dermatitis types</li>
+                            <li>Built the mobile application interface using FastAPI backend and React frontend</li>
+                            <li>Implemented SHAP-based explainability features for clinical transparency</li>
+                        </ul>
+                        <p><strong>Key Achievement:</strong> Our CMABFMB model statistically outperformed traditional SVM baselines (p&lt;0.01), demonstrating the real-world impact of multimodal fusion in veterinary diagnostics. The system achieved perfect recall for dermatitis detection ensuring no cases were missed while maintaining high precision to minimize false alarms.</p>
+                        <p><strong>Stack:</strong> Python, TensorFlow/PyTorch, BERT, MobileNetV3, FastAPI, React Native, Expo Go, Google Colab</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="carousel-slide project-slide">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/pchc-bank.png" alt="DFA-Based Security Framework">
+                    </div>
+                    <div class="project-description">
+                        <h3>DFA-Based Security Framework for Banking Input Validation</h3>
+                        <p>Developed a formal methods-based security system using Deterministic Finite Automaton (DFA) theory to prevent format-based attacks in Philippine banking applications. The system validates PCHC (Philippine Clearing House Corporation) bank codes through a mathematically provable, 6-layer validation pipeline that eliminates format string attacks, SQL injection, null byte injection, and buffer overflow attempts before they reach critical banking infrastructure.</p>
+                        <p><strong>Technical Implementation:</strong></p>
+                        <ul class="technical-implementation-bullet">
+                            <li>Designed and implemented a complete DFA state machine enforcing strict format validation (9-digit codes, "010" prefix, character set constraints)</li>
+                            <li>Built a Flask REST API backend with comprehensive attack detection analyzing input patterns in real-time</li>
+                            <li>Created an interactive web dashboard with visual state transition tracking and live security monitoring</li>
+                            <li>Developed a Windows executable attack simulator for penetration testing and validation accuracy verification</li>
+                        </ul>
+                        <p><strong>Security Features:</strong> Zero false negatives on 100+ attack test cases (100% detection rate), sub-5ms validation time maintaining banking performance requirements, multi-field validation extending to account numbers (13 digits), transaction amounts (decimal precision), and reference codes (alphanumeric), real-time monitoring dashboard displaying attack attempts from external testing tools.</p>
+                        <p><strong>Impact:</strong> Achieved 96-100% attack detection rates across format string, SQL injection, XSS, and structural bypass attempts while maintaining zero false positives on legitimate bank codes—demonstrating that formal automata theory provides practical, deployable security solutions for high-stakes financial systems.</p>
+                        <p><strong>Stack:</strong> Python, Flask, HTML/CSS/JavaScript (Tailwind), Finite Automata Theory, Security Testing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="carousel-slide project-slide">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/tickit.png" alt="TickIT Enterprise Ticket Management System">
+                    </div>
+                    <div class="project-description">
+                        <h3>TickIT: Enterprise Ticket Management System</h3>
+                        <p>Developed TickIT, a full-stack Laravel-based ticket management and support system designed to streamline organizational support operations. The system enables employees and managers to create support requests, while support agents and administrators manage ticket queues, handle escalations, and track resolution progress through a complete lifecycle.</p>
+                        <p><strong>Technical Implementation:</strong> Implemented role-based access control using Spatie Permissions to enforce secure access across multiple user tiers (Employee, Manager, Support Agent, Support Admin), with each role having specific capabilities for ticket creation, response management, assignment, and escalation. Built a responsive frontend using Blade templating, Tailwind CSS, and Alpine.js, while leveraging Laravel 12 with MySQL for backend operations and Eloquent ORM for efficient data management.</p>
+                        <p><strong>Key Features:</strong> Comprehensive audit trails via ticket history tracking, file attachment support, department-based ticket routing, and user profile management. Integrated Laravel Breeze for authentication and utilized Vite for modern build tooling. Implemented automated database migrations and seeders for reproducible deployments, and set up Pest testing framework for code quality assurance.</p>
+                        <p><strong>Stack:</strong> Laravel 12, MySQL, Blade templating, Tailwind CSS, Alpine.js, Laravel Breeze, Vite, Pest testing framework, Spatie Permissions</p>
+                        <p><strong>Impact:</strong> The application successfully demonstrates proficiency in Laravel architecture, relational database design, RESTful API patterns, responsive web design, and role-based authorization systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="carousel-slide project-slide no-image">
+                <div class="project-content">
+                    <div class="project-description">
+                        <h3>Other Projects</h3>
+                        <p><strong>Device Wipe Notification</strong></p>
+                        <p>This automated system monitors offboarding tickets and identifies employees who still have assigned hardware assets after their last working day. It generates alerts and sends automated notifications to the IT team via SeaTalk.</p>
+                        <p><strong>GitHub Migration & Version Control Implementation</strong></p>
+                        <p>Established centralized version control infrastructure by migrating the team's local codebase to GitHub, enabling collaborative development and eliminating single-point-of-failure dependencies.</p>
+                        <p><strong>Problem it solves:</strong> During my internship, I discovered that all internal automation projects were stored locally on individual developer machines with no version control. This created critical issues:</p>
+                        <ul class="technical-implementation-bullet">
+                            <li>Code was inaccessible when developers were unavailable</li>
+                            <li>No backup or disaster recovery mechanism</li>
+                            <li>Impossible to collaborate or review code changes</li>
+                            <li>High risk of losing work due to device failures</li>
+                            <li>No change history or rollback capabilities</li>
+                        </ul>
+                        <p><strong>My solution:</strong> I initiated and led the migration of all internal projects to a team GitHub organization:</p>
+                        <ul class="technical-implementation-bullet">
+                            <li>Repository Setup: Created structured repositories for each project with clear naming conventions</li>
+                            <li>Documentation Standards: Established README templates, setup guides, and contribution guidelines for each repo</li>
+                            <li>Branch Strategy: Implemented branching workflow (main/development/feature) for safe collaboration</li>
+                            <li>Knowledge Transfer: Trained team members on Git workflows and best practices</li>
+                            <li>CI/CD Foundation: Set up GitHub Actions for automated testing and deployment where applicable</li>
+                        </ul>
+                        <p><strong>Technical Implementation:</strong></p>
+                        <ul class="technical-implementation-bullet">
+                            <li>GitHub organization with role-based repository access</li>
+                            <li>Comprehensive documentation for each project (installation, configuration, usage)</li>
+                            <li>.gitignore templates and security best practices (credential management)</li>
+                            <li>Issue tracking and project boards for task management</li>
+                        </ul>
+                        <p><strong>Impact:</strong> Eliminated single-point-of-failure risks, enabled team collaboration on codebases, provided complete change history and rollback capabilities, and established foundation for professional development practices across the IT automation team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation Dots -->
+        <div class="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+            <span class="dot" data-slide="5"></span>
+            <span class="dot" data-slide="6"></span>
+            <span class="dot" data-slide="7"></span>
+        </div>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

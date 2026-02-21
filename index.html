@@ -117,11 +117,11 @@
                     <div class="experience-card-section">
                         <h5>Automation & Integration Projects</h5>
                         <ul>
-                            <li>Engineered a centralized announcement system using Google Apps Script, integrated with SeaTalk webhook APIs for automated company-wide communications</li>
+                            <li>Engineered a centralized announcement system using Google Apps Script, integrated with Communication tool webhook APIs for automated company-wide communications</li>
                             <li>Reduced manual announcement distribution time by 80% through webhook-triggered notifications across multiple channels</li>
                             <li>Developed the Corporate IT Hub web application with role-based access control, providing centralized access to IT resources, tools, and applications for 500+ employees</li>
                             <li>Built an Asset Issuance Management system featuring automated IT PIC assignments, bulk device allocations, and policy-compliant workflows using Google Apps Script and Google Sheets</li>
-                            <li>Created a Device Wipe Alert automation system that monitors offboarding tickets, identifies hardware compliance issues post-last-working-day, and triggers automated SeaTalk notifications with 3-working-day grace period logic</li>
+                            <li>Created a Device Wipe Alert automation system that monitors offboarding tickets, identifies hardware compliance issues post-last-working-day, and triggers automated Communication tool notifications with 3-working-day grace period logic</li>
                         </ul>
                     </div>
                 </div>
@@ -345,8 +345,8 @@
                     </div>
                     <div class="project-description">
                         <h3>Announcement Center</h3>
-                        <p>The Announcement Center is a web-based application that streamlines internal communications by sending formatted announcements, images, and interactive cards to multiple recipient groups via SeaTalk webhook integration. Built with Google Apps Script as the backend API, it features a modern, theme-switchable interface with real-time validation and dynamic content management.</p>
-                        <p><strong>Problem it solves:</strong> I developed this during my Shopee internship after observing the manual announcement workflow. Previously, the team had to:</p>
+                        <p>The Announcement Center is a web-based application that streamlines internal communications by sending formatted announcements, images, and interactive cards to multiple recipient groups via Communication tool webhook integration. Built with Google Apps Script as the backend API, it features a modern, theme-switchable interface with real-time validation and dynamic content management.</p>
+                        <p><strong>Problem it solves:</strong> I developed this after observing the manual announcement workflow. Previously, the team had to:</p>
                         <ul class="technical-implementation-bullet">
                             <li>Manually send announcements to test groups via Google Script</li>
                             <li>Screenshot the message to show the Team Lead how it looked</li>
@@ -357,7 +357,7 @@
                         <ul class="technical-implementation-bullet">
                             <li>User composes the announcement once and selects target groups</li>
                             <li>System automatically sends to test groups first</li>
-                            <li>Automatically generates an approval request in SeaTalk, mentioning the Team Lead with an interactive approval button</li>
+                            <li>Automatically generates an approval request in Communication tool, mentioning the Team Lead with an interactive approval button</li>
                             <li>Once approved via the button, the system automatically sends to all selected target groups</li>
                         </ul>
                         <p><strong>Impact:</strong> Reduced announcement distribution time by 80% and eliminated manual re-entry, ensuring message consistency across test and production sends.</p>
@@ -366,24 +366,21 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="carousel-slide project-slide">
+            <div class="carousel-slide project-slide no-image">
                 <div class="project-content">
-                    <div class="project-image">
-                        <img src="images/asset-issuance-management.png" alt="Asset Issuance Management System">
-                    </div>
                     <div class="project-description">
                         <h3>Asset Issuance Management System</h3>
                         <p>The Asset Management System is a Google Apps Script web application that centralizes and automates employee onboarding, device migration, and asset assignment workflows. It features role-based access control, automated IT PIC assignments, and real-time tracking of device allocations across the organization.</p>
-                        <p><strong>Problem it solves:</strong> During my Internship, I identified inefficiencies in the asset management workflow. The team relied on multiple disconnected Google Sheets:</p>
+                        <p><strong>Problem it solves:</strong>Inefficiencies in the asset management workflow. The team relied on multiple disconnected Google Sheets:</p>
                         <ul class="technical-implementation-bullet">
-                            <li>HR's onboarding list (accessed via IMPORTRANGE)</li>
+                            <li>Onboarding list (accessed via google sheet formulas)</li>
                             <li>Asset issuance policies in a separate sheet</li>
                             <li>Device inventory in another document</li>
                         </ul>
                         <p>This fragmented system required switching between multiple sheets, manual data synchronization, and repetitive lookups—making the process slow and error-prone.</p>
-                        <p><strong>My solution:</strong> I built a unified web application that integrates three Google Sheets into a single, centralized system:</p>
+                        <p><strong>My solution:</strong> A unified web application that integrates three Google Sheets into a single, centralized system:</p>
                         <ul class="technical-implementation-bullet">
-                            <li>Live HR Integration: Real-time sync with HR's onboarding list</li>
+                            <li>Live HR Integration: Real-time sync with onboarding list</li>
                             <li>Dynamic Policy Management: Editable asset issuance policies directly within the app (add, modify, delete) without touching the source sheets</li>
                             <li>Device Inventory Control: Centralized device tracking with bulk allocation capabilities</li>
                             <li>Automated Workflows: Auto-assigns IT PICs based on predefined rules and generates compliance reports</li>
@@ -395,15 +392,12 @@
             </div>
 
             <!-- Project 3 -->
-            <div class="carousel-slide project-slide">
+            <div class="carousel-slide project-slide no-image">
                 <div class="project-content">
-                    <div class="project-image">
-                        <img src="images/corp-it-hub.png" alt="Corporate IT Hub">
-                    </div>
                     <div class="project-description">
                         <h3>Corporate IT Hub</h3>
                         <p>The Corporate IT Hub is a centralized web application that serves as a one-stop portal for all internal IT resources, tools, and applications. Built with role-based access control, it provides employees with organized, permission-based access to company systems and documentation.</p>
-                        <p><strong>Problem it solves:</strong> During my Shopee internship, I observed that as the company scaled, employees were managing dozens of bookmarked tools across different platforms leading to confusion, lost links, and decreased productivity. IT support tickets for "where do I find X tool?" were increasing, and new hires struggled to discover available resources.</p>
+                        <p><strong>Problem it solves:</strong> I observed that as the company scaled, employees were managing dozens of bookmarked tools across different platforms leading to confusion, lost links, and decreased productivity. IT support tickets for "where do I find X tool?" were increasing, and new hires struggled to discover available resources.</p>
                         <p><strong>My solution:</strong> I developed a centralized IT Hub that consolidates all company tools and resources into a single, organized interface:</p>
                         <ul class="technical-implementation-bullet">
                             <li>Unified Access Point: All IT tools, applications, and resources accessible from one dashboard</li>
@@ -484,10 +478,10 @@
                     <div class="project-description">
                         <h3>Other Projects</h3>
                         <p><strong>Device Wipe Notification</strong></p>
-                        <p>This automated system monitors offboarding tickets and identifies employees who still have assigned hardware assets after their last working day. It generates alerts and sends automated notifications to the IT team via SeaTalk.</p>
+                        <p>This automated system monitors offboarding tickets and identifies employees who still have assigned hardware assets after their last working day. It generates alerts and sends automated notifications to the IT team via Communication tool.</p>
                         <p><strong>GitHub Migration & Version Control Implementation</strong></p>
                         <p>Established centralized version control infrastructure by migrating the team's local codebase to GitHub, enabling collaborative development and eliminating single-point-of-failure dependencies.</p>
-                        <p><strong>Problem it solves:</strong> During my internship, I discovered that all internal automation projects were stored locally on individual developer machines with no version control. This created critical issues:</p>
+                        <p><strong>Problem it solves:</strong> I discovered that all internal automation projects were stored locally on individual developer machines with no version control. This created critical issues:</p>
                         <ul class="technical-implementation-bullet">
                             <li>Code was inaccessible when developers were unavailable</li>
                             <li>No backup or disaster recovery mechanism</li>

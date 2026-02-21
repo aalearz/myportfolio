@@ -920,8 +920,16 @@ main > section {
 }
 
 .project-slide.no-image .project-content {
-    grid-template-columns: 1fr;
-    max-width: 1000px;
+    display: block;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+}
+
+.project-slide.no-image .project-description {
+    max-height: 100%;
+    padding-right: 0;
+    width: 100%;
 }
 
 /* Carousel Navigation Dots */
@@ -1223,5 +1231,291 @@ main > section {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .experience-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+    }
+
+    .experience-card {
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    main {
+        scroll-snap-type: none;
+    }
+
+    main > section {
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+    }
+
+    .section-nav {
+        display: none;
+    }
+
+    .site-nav {
+        padding: 0.75rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .site-nav__brand-link {
+        font-size: 0.85rem;
+        line-height: 1.2;
+    }
+
+    .site-nav__brand-link br {
+        display: none;
+    }
+
+    .site-nav__links {
+        width: 100%;
+        margin-left: 0;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .site-nav__link {
+        font-size: 0.85rem;
+    }
+
+    .myName h3 {
+        font-size: 2.4rem;
+    }
+
+    .myName h1 {
+        font-size: 3.3rem;
+    }
+
+    .intro-section,
+    .experience-section,
+    .skills-section,
+    .projects-section,
+    .contact-section,
+    .contact-section-full {
+        padding: 8rem 1rem 3rem;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        max-width: 100%;
+    }
+
+    .profile-image {
+        position: static;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .intro-left,
+    .intro-right {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+
+    .intro-left h2 {
+        font-size: 1.7rem;
+        line-height: 1.3;
+    }
+
+    .welcome {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .welcome-desc,
+    .long-desc,
+    .intro-left p {
+        font-size: 0.95rem;
+    }
+
+    .socials-list-container {
+        gap: 0.75rem;
+    }
+
+    .heading p br {
+        display: none;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .experience-list,
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .experience-card {
+        height: auto;
+        min-height: 100px;
+    }
+
+    .experience-card-header {
+        height: auto;
+        min-height: 100px;
+        align-items: flex-start;
+    }
+
+    .experience-card-details {
+        width: calc(100vw - 2rem);
+        max-height: 70vh;
+    }
+
+    .skill-card {
+        grid-template-columns: 72px 1fr;
+        min-height: 96px;
+        height: auto;
+    }
+
+    .skill-icon {
+        width: 72px;
+        min-width: 72px;
+    }
+
+    .skill-card h4 {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .skill-card p {
+        margin-top: -0.25rem;
+        font-size: 0.78rem;
+        line-height: 1.2;
+    }
+
+    .carousel-container {
+        height: auto;
+        min-height: 78vh;
+    }
+
+    .carousel-slide,
+    .project-slide {
+        padding: 1rem;
+    }
+
+    .intro-slide {
+        margin: 0;
+    }
+
+    .intro-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .project-heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-subheading {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    .project-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-description {
+        max-height: none;
+        overflow: visible;
+        padding-right: 0;
+    }
+
+    .project-description h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-description p,
+    .technical-implementation-bullet li {
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    .carousel-dots {
+        bottom: 0.75rem;
+        gap: 0.6rem;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .dot.active {
+        width: 26px;
+    }
+
+    .contact-content {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .contact-left h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .myName h3 {
+        font-size: 2rem;
+    }
+
+    .myName h1 {
+        font-size: 2.7rem;
+    }
+
+    .project-heading {
+        font-size: 1.7rem;
+    }
+
+    .project-description h3 {
+        font-size: 1.1rem;
+    }
+
+    .site-nav__links {
+        justify-content: flex-start;
     }
 }
